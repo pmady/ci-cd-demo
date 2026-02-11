@@ -1,0 +1,6 @@
+.git
+.github
+*.md
+k8s/
+argocd/
+LICENSE

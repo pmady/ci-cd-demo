@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: ci-cd-demo
+  namespace: ci-cd-demo
+  labels:
+    app.kubernetes.io/name: ci-cd-demo
+spec:
+  type: ClusterIP
+  selector:
+    app.kubernetes.io/name: ci-cd-demo
+  ports:
+    - port: 80
+      targetPort: 8080
+      protocol: TCP
+      name: http

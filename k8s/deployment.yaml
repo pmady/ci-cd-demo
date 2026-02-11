@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
         - name: ci-cd-demo
-          image: ghcr.io/pmady/ci-cd-demo:latest
+          image: ghcr.io/pmady/ci-cd-demo:d2927ac
           ports:
             - containerPort: 8080
               protocol: TCP
